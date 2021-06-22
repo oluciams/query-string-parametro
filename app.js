@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 
-app.get('/user/:nombre', (req, res) => {
+app.get('/makers/:nombre', (req, res) => {
     let name = req.params.nombre;
     let nameUpp= name.replace(name.charAt(0), name.charAt(0).toUpperCase())
     if (!name || name.length === 0) {
